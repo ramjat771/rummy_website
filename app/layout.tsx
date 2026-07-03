@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  themeColor: "#0f3d2e",
 };
 
 export default function RootLayout({
@@ -16,7 +17,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <meta name="theme-color" content="#0f3d2e" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+
+      <body className="bg-black">{children}</body>
     </html>
   );
 }

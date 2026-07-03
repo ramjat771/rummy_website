@@ -21,17 +21,18 @@ const moneyItems = [
 export default function Background() {
     return (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {/* Background */}
+
+            {/* Background Image */}
             <img
                 src="/bg.jpg"
-                alt="Background"
+                alt="background"
                 className="absolute inset-0 h-full w-full object-cover"
             />
 
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/45" />
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black/50" />
 
-            {/* Golden Glow */}
+            {/* Glow */}
             <motion.div
                 className="absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-yellow-400/20 blur-[150px]"
                 animate={{
@@ -45,15 +46,12 @@ export default function Background() {
                 }}
             />
 
-            {/* Floating Money */}
-            {moneyItems.map((item, index) => (
+            {/* Floating icons */}
+            {moneyItems.map((item, i) => (
                 <motion.div
-                    key={index}
+                    key={i}
                     className={`absolute ${item.size} select-none`}
-                    style={{
-                        left: item.left,
-                        top: item.top,
-                    }}
+                    style={{ left: item.left, top: item.top }}
                     animate={{
                         y: [-30, 30, -30],
                         rotate: [-15, 15, -15],
@@ -69,7 +67,7 @@ export default function Background() {
                 </motion.div>
             ))}
 
-            {/* Bottom Vignette */}
+            {/* vignette */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_35%,black_100%)] opacity-60" />
         </div>
     );
