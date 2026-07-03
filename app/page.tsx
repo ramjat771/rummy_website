@@ -10,12 +10,9 @@ import ShareButton from "@/components/ShareButton";
 export default function Home() {
   return (
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden">
-
       <Background />
 
       <div className="relative z-10 flex flex-col items-center text-center px-6">
-
-        {/* Lottie */}
         <motion.div
           className="h-44 w-44 md:h-56 md:w-56"
           initial={{ opacity: 0, scale: 0.7 }}
@@ -29,19 +26,15 @@ export default function Home() {
           />
         </motion.div>
 
-        {/* Title */}
         <h1 className="mt-6 text-4xl md:text-6xl font-bold text-white">
           Rummy APK
         </h1>
 
-        <p className="text-green-100 mt-2">
+        <p className="mt-2 text-green-100">
           Play • Win • Enjoy
         </p>
 
-        {/* Buttons */}
         <div className="mt-10 flex flex-col gap-5">
-
-          {/* Download */}
           <Link
             href="/download"
             className="rounded-full bg-yellow-400 px-12 py-4 font-bold text-black transition hover:scale-105"
@@ -49,11 +42,8 @@ export default function Home() {
             ⬇ Download APK
           </Link>
 
-          {/* Share Button Component */}
           <ShareButton />
-
         </div>
-
       </div>
     </main>
   );

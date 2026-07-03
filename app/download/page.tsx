@@ -49,17 +49,16 @@ export default function DownloadPage() {
                 </div>
 
                 <a
-                    href="/app-release.apk"
-                    download
+                    href="https://sattagames.online/app-release.apk"
                     className="mt-8 block w-full rounded-xl bg-green-600 py-4 text-center text-lg font-bold text-white hover:bg-green-700 transition"
                 >
                     ⬇ Download APK
                 </a>
 
                 <div className="mt-6 rounded-xl bg-green-50 p-4">
-                    <h2 className="font-semibold mb-2">Installation</h2>
+                    <h2 className="mb-2 font-semibold">Installation</h2>
 
-                    <ol className="list-decimal ml-5 text-sm text-gray-600 space-y-1">
+                    <ol className="ml-5 list-decimal space-y-1 text-sm text-gray-600">
                         <li>Download the APK.</li>
                         <li>Open the downloaded file.</li>
                         <li>Allow installation from unknown sources if prompted.</li>
