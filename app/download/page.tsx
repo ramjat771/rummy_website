@@ -49,7 +49,7 @@ export default function DownloadPage() {
                 </div>
 
                 <a
-                    href="https://sattagames.online/app-release.apk"
+                    href="https://royalrummy.online/app-release.apk"
                     className="mt-8 block w-full rounded-xl bg-green-600 py-4 text-center text-lg font-bold text-white hover:bg-green-700 transition"
                 >
                     ⬇ Download APK
